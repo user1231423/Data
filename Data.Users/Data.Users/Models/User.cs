@@ -3,7 +3,7 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    public class UserDAO
+    public class User
     {
         /// <summary>
         /// Id
