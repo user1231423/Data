@@ -15,13 +15,13 @@
         /// First name
         /// </summary>
         [Required(ErrorMessage = "First name is required")]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Max first name length is 50")]
         public string FirstName { get; set; }
 
         /// <summary>
         /// Last name
         /// </summary>
-        [StringLength(50, ErrorMessage = "Max first name length is 50")]
+        [StringLength(50, ErrorMessage = "Max last name length is 50")]
         public string LastName { get; set; }
 
         /// <summary>
@@ -29,13 +29,14 @@
         /// </summary>
         [Required(ErrorMessage = "Email is required")]
         [EmailAddress(ErrorMessage = "Email must be valid")]
+        [StringLength(50, ErrorMessage = "Max email length is 50")]
         public string Email { get; set; }
 
         /// <summary>
         /// Password
         /// </summary>
         [Required(ErrorMessage = "Password is required")]
-        [StringLength(50, ErrorMessage = "Max password length is 50")]
+        [StringLength(64, ErrorMessage = "Max password length is 64")]
         public string Password { get; set; }
 
         /// <summary>

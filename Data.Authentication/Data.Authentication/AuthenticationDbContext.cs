@@ -4,13 +4,13 @@ using System;
 
 namespace Data.Authentication
 {
-    public class UsersDbContext : DbContext
+    public class AuthenticationDbContext : DbContext
     {
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="options"></param>
-        public UsersDbContext(DbContextOptions<UsersDbContext> options) : base(options)
+        public AuthenticationDbContext(DbContextOptions<AuthenticationDbContext> options) : base(options)
         {
         }
 
