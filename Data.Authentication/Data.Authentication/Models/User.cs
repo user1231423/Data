@@ -1,4 +1,4 @@
-﻿namespace Data.Users.Models
+﻿namespace Data.Authentication.Models
 {
     using System;
     using System.ComponentModel.DataAnnotations;

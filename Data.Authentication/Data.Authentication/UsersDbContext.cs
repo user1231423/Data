@@ -1,8 +1,8 @@
-﻿using Data.Users.Models;
+﻿using Data.Authentication.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Data.Users
+namespace Data.Authentication
 {
     public class UsersDbContext : DbContext
     {
