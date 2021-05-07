@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.Encoding\Common.Encoding\Common.Encoding.csproj" />
+    <ProjectReference Include="..\..\Data.Authentication\Data.Authentication\Data.Authentication.csproj" />
+  </ItemGroup>
+
+</Project>
