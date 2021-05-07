@@ -1,8 +1,11 @@
 ﻿using Data.Authentication.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace Data.Authentication
+namespace API.Authentication.Database
 {
     public class AuthenticationDbContext : DbContext
     {
@@ -36,8 +39,8 @@ namespace Data.Authentication
         {
             modelBuilder.Entity<User>()
                 .Property(x => x.CreateDate)
-                .ValueGeneratedOnAdd(); 
-            
+                .ValueGeneratedOnAdd();
+
             modelBuilder.Entity<User>()
                 .Property(x => x.UpdateDate)
                 .ValueGeneratedOnUpdate();
