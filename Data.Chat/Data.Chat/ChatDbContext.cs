@@ -1,6 +1,5 @@
 ﻿namespace Data.Chat
 {
-    using Data.Authentication.Models;
     using Data.Chat.Models;
     using Microsoft.EntityFrameworkCore;
 
@@ -49,11 +48,66 @@
         public DbSet<UserRecentConversations> UserRecentConversations { get; set; }
 
         /// <summary>
+        /// Kicked users
+        /// </summary>
+        public DbSet<KickedUser> KickedUsers { get; set; }
+
+        /// <summary>
+        /// Invited users
+        /// </summary>
+        public DbSet<InvitedUser> InvitedUsers { get; set; }
+
+        /// <summary>
         /// On model creating
         /// </summary>
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+                .HasMany(x => x.Conversations)
+                .WithOne(y => y.User)
+                .HasForeignKey(z => z.UserId);
+
+            modelBuilder.Entity<User>()
+                .HasMany(x => x.Invites)
+                .WithOne(y => y.User)
+                .HasForeignKey(z => z.UserId);
+
+            modelBuilder.Entity<User>()
+                .HasMany(x => x.Kicks)
+                .WithOne(y => y.User)
+                .HasForeignKey(z => z.User);
+
+            modelBuilder.Entity<User>()
+                .HasMany(x => x.Messages)
+                .WithOne(y => y.User)
+                .HasForeignKey(z => z.UserId);
+
+            modelBuilder.Entity<User>()
+                .HasMany(x => x.ReadMessages)
+                .WithOne(y => y.User)
+                .HasForeignKey(z => z.UserId);
+
+            modelBuilder.Entity<Conversation>()
+                .HasMany(x => x.Messages)
+                .WithOne(y => y.Conversation)
+                .HasForeignKey(z => z.ConversationId);
+
+            modelBuilder.Entity<Conversation>()
+                .HasMany(x => x.InvitedUsers)
+                .WithOne(y => y.Conversation)
+                .HasForeignKey(z => z.ConversationId);
+
+            modelBuilder.Entity<Conversation>()
+                .HasMany(x => x.KickedUsers)
+                .WithOne(y => y.Conversation)
+                .HasForeignKey(z => z.ConversationId);
+
+            modelBuilder.Entity<Conversation>()
+                .HasMany(x => x.Users)
+                .WithOne(y => y.Conversation)
+                .HasForeignKey(z => z.ConversationId);
+
         }
     }
 }

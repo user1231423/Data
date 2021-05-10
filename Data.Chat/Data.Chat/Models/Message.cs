@@ -31,13 +31,15 @@ namespace Data.Chat.Models
         }
 
         /// <summary>
-        /// Author Id
+        /// User Id
         /// </summary>
-        public int AuthorId { get; set; }
+        [Required]
+        public int UserId { get; set; }
 
         /// <summary>
         /// Conversation id
         /// </summary>
+        [Required]
         public int ConversationId { get; set; }
 
         /// <summary>
@@ -49,6 +51,21 @@ namespace Data.Chat.Models
         /// Update date
         /// </summary>
         public DateTime UpdateDate { get; set; }
+
+        /// <summary>
+        /// User
+        /// </summary>
+        public User User { get; set; }
+
+        /// <summary>
+        /// Conversation
+        /// </summary>
+        public Conversation Conversation { get; set; }
+
+        /// <summary>
+        /// Read messages
+        /// </summary>
+        public List<ReadMessage> ReadMessages { get; set; }
 
     }
 }

@@ -3,7 +3,7 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    public class ReadMessage
+    public class KickedUser
     {
         /// <summary>
         /// Id
@@ -14,14 +14,12 @@
         /// <summary>
         /// User id
         /// </summary>
-        [Required]
         public int UserId { get; set; }
 
         /// <summary>
-        /// Message id
+        /// Conversation id
         /// </summary>
-        [Required]
-        public int MessageId { get; set; }
+        public int ConversationId { get; set; }
 
         /// <summary>
         /// Create date
@@ -29,18 +27,13 @@
         public DateTime CreateDate { get; set; }
 
         /// <summary>
-        /// Update date
-        /// </summary>
-        public DateTime UpdateDate { get; set; }
-
-        /// <summary>
         /// User
         /// </summary>
         public User User { get; set; }
 
         /// <summary>
-        /// Message
+        /// Conversation
         /// </summary>
-        public Message Message { get; set; }
+        public Conversation Conversation { get; set; }
     }
 }

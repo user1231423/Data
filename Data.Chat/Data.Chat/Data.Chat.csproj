@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Common.Encoding\Common.Encoding\Common.Encoding.csproj" />
-    <ProjectReference Include="..\..\Data.Authentication\Data.Authentication\Data.Authentication.csproj" />
   </ItemGroup>
 
 </Project>

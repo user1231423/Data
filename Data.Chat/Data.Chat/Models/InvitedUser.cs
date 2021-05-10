@@ -1,9 +1,13 @@
-﻿namespace Data.Chat.Models
-{
-    using System;
-    using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-    public class ReadMessage
+namespace Data.Chat.Models
+{
+    public class InvitedUser
     {
         /// <summary>
         /// Id
@@ -14,14 +18,12 @@
         /// <summary>
         /// User id
         /// </summary>
-        [Required]
         public int UserId { get; set; }
 
         /// <summary>
-        /// Message id
+        /// Conversation id
         /// </summary>
-        [Required]
-        public int MessageId { get; set; }
+        public int ConversationId { get; set; }
 
         /// <summary>
         /// Create date
@@ -29,18 +31,13 @@
         public DateTime CreateDate { get; set; }
 
         /// <summary>
-        /// Update date
-        /// </summary>
-        public DateTime UpdateDate { get; set; }
-
-        /// <summary>
         /// User
         /// </summary>
         public User User { get; set; }
 
         /// <summary>
-        /// Message
+        /// Conversation
         /// </summary>
-        public Message Message { get; set; }
+        public Conversation Conversation { get; set; }
     }
 }

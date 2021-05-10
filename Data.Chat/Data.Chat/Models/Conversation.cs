@@ -33,6 +33,31 @@ namespace Data.Chat.Models
         /// <summary>
         /// Date started
         /// </summary>
-        public DateTime DateStarted { get; set; } = DateTime.Now;
+        public DateTime CreateDate { get; set; } = DateTime.Now;
+        
+        /// <summary>
+        /// Update date
+        /// </summary>
+        public DateTime UpdateDate { get; set; }
+
+        /// <summary>
+        /// Messages
+        /// </summary>
+        public List<Message> Messages { get; set; }
+
+        /// <summary>
+        /// Users
+        /// </summary>
+        public List<UserConversation> Users { get; set; }
+
+        /// <summary>
+        /// Kicked users
+        /// </summary>
+        public List<KickedUser> KickedUsers { get; set; }
+
+        /// <summary>
+        /// Invited users
+        /// </summary>
+        public List<InvitedUser> InvitedUsers { get; set; }
     }
 }
