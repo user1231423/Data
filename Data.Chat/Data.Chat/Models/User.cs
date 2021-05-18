@@ -63,6 +63,13 @@ namespace Data.Chat.Models
         public DateTime? UpdateDate { get; set; }
 
         /// <summary>
+        /// User full name
+        /// </summary>
+        public string FullName {
+            get { return FirstName + " " + LastName; }
+        }
+
+        /// <summary>
         /// Conversations
         /// </summary>
         public List<UserConversation> Conversations { get; set; }

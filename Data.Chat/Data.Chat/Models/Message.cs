@@ -11,11 +11,6 @@ namespace Data.Chat.Models
     public class Message
     {
         /// <summary>
-        /// Body
-        /// </summary>
-        private string _Body = "";
-
-        /// <summary>
         /// Id
         /// </summary>
         [Key]
@@ -26,8 +21,8 @@ namespace Data.Chat.Models
         /// </summary>
         public string Body
         {
-            get { return _Body.Decrypt(); }
-            set { _Body = value.Encrypt(); }
+            get { return Body.Decrypt(); }
+            set { value.Encrypt(); }
         }
 
         /// <summary>
@@ -50,7 +45,7 @@ namespace Data.Chat.Models
         /// <summary>
         /// Update date
         /// </summary>
-        public DateTime UpdateDate { get; set; }
+        public DateTime? UpdateDate { get; set; }
 
         /// <summary>
         /// User
