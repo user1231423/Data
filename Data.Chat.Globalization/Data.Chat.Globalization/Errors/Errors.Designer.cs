@@ -22,7 +22,7 @@ namespace Data.Chat.Globalization.Errors {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Errors {
+    public class Errors {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Data.Chat.Globalization.Errors {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Data.Chat.Globalization.Errors.Errors", typeof(Errors).Assembly);
@@ -51,7 +51,7 @@ namespace Data.Chat.Globalization.Errors {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to Conversation not found.
         /// </summary>
-        internal static string ConversationNotFound {
+        public static string ConversationNotFound {
             get {
                 return ResourceManager.GetString("ConversationNotFound", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to Duplicate user ids found.
         /// </summary>
-        internal static string DuplicateUserIds {
+        public static string DuplicateUserIds {
             get {
                 return ResourceManager.GetString("DuplicateUserIds", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to Inválid user ids found.
         /// </summary>
-        internal static string InvalidUserIds {
+        public static string InvalidUserIds {
             get {
                 return ResourceManager.GetString("InvalidUserIds", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to Invited user not found.
         /// </summary>
-        internal static string InvitedUserNotFound {
+        public static string InvitedUserNotFound {
             get {
                 return ResourceManager.GetString("InvitedUserNotFound", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to Kicked user not found.
         /// </summary>
-        internal static string KickedUserNotFound {
+        public static string KickedUserNotFound {
             get {
                 return ResourceManager.GetString("KickedUserNotFound", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to Message not found.
         /// </summary>
-        internal static string MessageNotFound {
+        public static string MessageNotFound {
             get {
                 return ResourceManager.GetString("MessageNotFound", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to Read message not found.
         /// </summary>
-        internal static string ReadMessageNotFound {
+        public static string ReadMessageNotFound {
             get {
                 return ResourceManager.GetString("ReadMessageNotFound", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to User conversation not found.
         /// </summary>
-        internal static string UserConversationNotFound {
+        public static string UserConversationNotFound {
             get {
                 return ResourceManager.GetString("UserConversationNotFound", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to User conversation not found or is not active.
         /// </summary>
-        internal static string UserConversationNotFoundOrIsNotActive {
+        public static string UserConversationNotFoundOrIsNotActive {
             get {
                 return ResourceManager.GetString("UserConversationNotFoundOrIsNotActive", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to User left the conversation.
         /// </summary>
-        internal static string UserLeftTheConversation {
+        public static string UserLeftTheConversation {
             get {
                 return ResourceManager.GetString("UserLeftTheConversation", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to User not found.
         /// </summary>
-        internal static string UserNotFound {
+        public static string UserNotFound {
             get {
                 return ResourceManager.GetString("UserNotFound", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace Data.Chat.Globalization.Errors {
         /// <summary>
         ///   Looks up a localized string similar to User was kicked.
         /// </summary>
-        internal static string UserWasKicked {
+        public static string UserWasKicked {
             get {
                 return ResourceManager.GetString("UserWasKicked", resourceCulture);
             }
