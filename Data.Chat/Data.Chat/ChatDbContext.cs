@@ -45,7 +45,7 @@
         /// <summary>
         /// View User recent conversations
         /// </summary>
-        public DbSet<UserRecentConversations> UserRecentConversations { get; set; }
+        //public DbSet<UserRecentConversations> UserRecentConversations { get; set; }
 
         /// <summary>
         /// Kicked users
@@ -63,6 +63,11 @@
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<InvitedUser>().ToTable("ConversationInvitedUsers");
+            modelBuilder.Entity<KickedUser>().ToTable("ConversationKickedUsers");
+            modelBuilder.Entity<ReadMessage>().ToTable("UserMessagesRead");
+            modelBuilder.Entity<Message>().ToTable("ConversationMessages");
+
             modelBuilder.Entity<User>()
                 .HasMany(x => x.Conversations)
                 .WithOne(y => y.User)

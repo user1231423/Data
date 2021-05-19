@@ -27,7 +27,7 @@ namespace Data.Chat.Models
         /// Name
         /// </summary>
         [Required]
-        [StringLength(255, ErrorMessage = "Max conversation name lenght is 55")]
+        [StringLength(255, ErrorMessage = "Max conversation name lenght is 255")]
         public string Name { get; set; }
 
         /// <summary>

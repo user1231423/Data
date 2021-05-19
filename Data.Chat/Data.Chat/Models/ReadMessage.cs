@@ -29,11 +29,6 @@
         public DateTime CreateDate { get; set; }
 
         /// <summary>
-        /// Update date
-        /// </summary>
-        public DateTime UpdateDate { get; set; }
-
-        /// <summary>
         /// User
         /// </summary>
         public User User { get; set; }
