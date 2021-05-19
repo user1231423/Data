@@ -59,5 +59,113 @@ namespace Data.Chat.Globalization.Errors {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conversation not found.
+        /// </summary>
+        internal static string ConversationNotFound {
+            get {
+                return ResourceManager.GetString("ConversationNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Duplicate user ids found.
+        /// </summary>
+        internal static string DuplicateUserIds {
+            get {
+                return ResourceManager.GetString("DuplicateUserIds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inválid user ids found.
+        /// </summary>
+        internal static string InvalidUserIds {
+            get {
+                return ResourceManager.GetString("InvalidUserIds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invited user not found.
+        /// </summary>
+        internal static string InvitedUserNotFound {
+            get {
+                return ResourceManager.GetString("InvitedUserNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kicked user not found.
+        /// </summary>
+        internal static string KickedUserNotFound {
+            get {
+                return ResourceManager.GetString("KickedUserNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message not found.
+        /// </summary>
+        internal static string MessageNotFound {
+            get {
+                return ResourceManager.GetString("MessageNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Read message not found.
+        /// </summary>
+        internal static string ReadMessageNotFound {
+            get {
+                return ResourceManager.GetString("ReadMessageNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User conversation not found.
+        /// </summary>
+        internal static string UserConversationNotFound {
+            get {
+                return ResourceManager.GetString("UserConversationNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User conversation not found or is not active.
+        /// </summary>
+        internal static string UserConversationNotFoundOrIsNotActive {
+            get {
+                return ResourceManager.GetString("UserConversationNotFoundOrIsNotActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User left the conversation.
+        /// </summary>
+        internal static string UserLeftTheConversation {
+            get {
+                return ResourceManager.GetString("UserLeftTheConversation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User not found.
+        /// </summary>
+        internal static string UserNotFound {
+            get {
+                return ResourceManager.GetString("UserNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User was kicked.
+        /// </summary>
+        internal static string UserWasKicked {
+            get {
+                return ResourceManager.GetString("UserWasKicked", resourceCulture);
+            }
+        }
     }
 }
