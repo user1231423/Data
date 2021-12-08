@@ -61,11 +61,29 @@ namespace Data.Authentication.Globalization.Errors {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No user with given email was found.
+        /// </summary>
+        public static string UserEmailNotFound {
+            get {
+                return ResourceManager.GetString("UserEmailNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User not found.
         /// </summary>
         public static string UserNotFound {
             get {
                 return ResourceManager.GetString("UserNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Passwords don&apos;t match.
+        /// </summary>
+        public static string UserPasswordsDontMatch {
+            get {
+                return ResourceManager.GetString("UserPasswordsDontMatch", resourceCulture);
             }
         }
     }
