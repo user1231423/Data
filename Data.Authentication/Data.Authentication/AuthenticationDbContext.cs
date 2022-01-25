@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace API.Authentication.Database
+namespace Data.Authentication.Database
 {
     public class AuthenticationDbContext : DbContext
     {
@@ -37,6 +37,9 @@ namespace API.Authentication.Database
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+                .HasKey(x => x.Id);
+
             modelBuilder.Entity<User>()
                 .Property(x => x.CreateDate)
                 .ValueGeneratedOnAdd();

@@ -3,14 +3,8 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    public class User
+    public class User : BaseEntity
     {
-        /// <summary>
-        /// Id
-        /// </summary>
-        [Key]
-        public int Id { get; set; }
-
         /// <summary>
         /// First name
         /// </summary>
@@ -47,15 +41,5 @@
         /// </summary>
         [Range(-1, 1, ErrorMessage = "Status must be between -1 and 1")]
         public short Status { get; set; }
-
-        /// <summary>
-        /// Create date
-        /// </summary>
-        public DateTime CreateDate { get; set; }
-
-        /// <summary>
-        /// Update date
-        /// </summary>
-        public DateTime? UpdateDate { get; set; }
     }
 }
